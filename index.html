@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<title>WFIdle!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="output.css" />
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div id="sidebar" class="column is-3">
+						<ul>
+							<h3 class="has-text-centered">WF-IDLE</h3>
+							<hr>
+							<li id="sbCombat" class="active">
+								<iconify-icon icon="jam:sword" width="27"></iconify-icon><span>Combat</span>
+							</li>
+							<li id="sbMods" class="">
+								<iconify-icon icon="jam:tools" width="27"></iconify-icon><span>Mods</span>
+							</li>
+						</ul>
+					</div>
+
+					<div id="mainbar" class="column">
+						<div class="box">
+							<h2 class="has-text-centered">Interval</h2>
+							<progress id="progressBar" class="progress" value="0" max="1000">15%</progress>
+						  </div>
+						<div class="interaction-panel">
+							<h3>Interaction</h3>
+							<button id="incrementCredits">Click Me!</button>
+							Credits: <span id="credits">0</span>
+							<button id="buyCursor">Buy Cursor</button>
+							Cursors: <span id="cursors">0</span>
+							Cursor Cost: <span id="cursorCost">10</span>
+						</div>
+					</div>
+					</div>
+				</div>
+		</section>
+		<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+		<script type="text/javascript" src="output.js"></script>
+	</body>
+</html>
